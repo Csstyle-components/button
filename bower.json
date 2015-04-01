@@ -1,0 +1,23 @@
+{
+  "name": "csstyle-buttons",
+  "version": "1.0",
+  "homepage": "https://github.com/Csstyle-components/buttons",
+  "authors": [
+    "Ges Jeremie <bonjour@gesjeremie.fr>"
+  ],
+  "description": "UI buttons component for csstyle.io",
+  "main": "buttons.sass",
+  "keywords": [
+    "csstyle-buttons",
+    "csstylebuttons",
+    "csstyle"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
