@@ -5,7 +5,7 @@
   "authors": [
     "Ges Jeremie <bonjour@gesjeremie.fr>"
   ],
-  "description": "UI buttons component for csstyle.io",
+  "description": "UI button component for csstyle.io",
   "main": "buttons.sass",
   "keywords": [
     "csstyle-buttons",
