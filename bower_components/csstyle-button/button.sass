@@ -1,0 +1,171 @@
+// ===========================================================
+// Component Button (v.1.0)
+// ===========================================================
+//
+// UI button component for csstyle.io
+//
+// Copyright (c) 2015 Ges Jeremie
+// http://www.gesjeremie.fr/
+// 
+
+// ===========================================================
+// Config
+// ===========================================================
+$csstyle-button-namespace: "button" !default
+$csstyle-button-font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif !default
+$csstyle-button-font-weight: 300 !default
+$csstyle-button-base-font-size: 15px !default
+$csstyle-button-base-padding-top-bottom: 6px !default
+$csstyle-button-base-padding-right-left: 12px !default
+
+
+
+// ===========================================================
+// Mixins
+// ===========================================================
+=csstyle-button-variant($background, $color, $border)
+  background-color: $background
+  color: $color
+  border-color: $border
+
+=csstyle-button-size($font-size, $padding-top-bottom, $padding-right-left)
+  font-size: $font-size
+  padding: $padding-top-bottom $padding-right-left
+
+// ===========================================================
+// Component
+// ===========================================================
+@include component($csstyle-button-namespace)
+  
+  // ===========================================================
+  // Default part
+  // ===========================================================
+  font-family: $csstyle-button-font-family
+  font-weight: $csstyle-button-font-weight
+  cursor: pointer
+  text-decoration: none !important
+  -ms-touch-action: manipulation
+  touch-action: manipulation
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  border-radius: 5px
+  border: 1px solid transparent
+  +csstyle-button-variant(#d6e1e5, #5e696d, #d6e1e5)
+  +csstyle-button-size($csstyle-button-base-font-size, $csstyle-button-base-padding-top-bottom, $csstyle-button-base-padding-right-left)
+
+  &:hover,
+  &:focus,
+  &:active,
+    outline: 0
+    +csstyle-button-variant(#e1eef3, #5e696d, #e1eef3)
+
+
+  // ===========================================================
+  // Sizes
+  // ===========================================================
+  
+  // extra small button
+  @include option(xs)
+    +csstyle-button-size($csstyle-button-base-font-size * 0.8, $csstyle-button-base-padding-top-bottom * 0.6, $csstyle-button-base-padding-right-left * 0.6)
+
+  // small button
+  @include option(sm)
+    +csstyle-button-size($csstyle-button-base-font-size * 0.8, $csstyle-button-base-padding-top-bottom * 0.8, $csstyle-button-base-padding-right-left * 0.8)
+
+  @include option(md)
+    +csstyle-button-size($csstyle-button-base-font-size, $csstyle-button-base-padding-top-bottom, $csstyle-button-base-padding-right-left)
+
+  // large button
+  @include option(lg)
+    +csstyle-button-size($csstyle-button-base-font-size * 1.2, $csstyle-button-base-padding-top-bottom * 1.2, $csstyle-button-base-padding-right-left * 1.2)
+  
+  // extra large button
+  @include option(xl)
+    +csstyle-button-size($csstyle-button-base-font-size * 1.4, $csstyle-button-base-padding-top-bottom * 1.6, $csstyle-button-base-padding-right-left * 1.6)
+
+  // ===========================================================
+  // Block
+  // ===========================================================
+  
+  @include option(block)
+    width: 100%
+    display: inline-block
+ 
+  // ===========================================================
+  // Colors
+  // ===========================================================
+  
+  // Default
+  @include option(default)
+    +csstyle-button-variant(#d6e1e5, #5e696d, #d6e1e5)
+    
+    &:hover,
+    &:active,
+    &:focus
+      +csstyle-button-variant(#e1eef3, #5e696d, #e1eef3)
+
+  // Success
+  @include option(success)
+    +csstyle-button-variant(#3eb5ac, #fff, #3eb5ac)
+
+    &:hover,
+    &:active,
+    &:focus
+      +csstyle-button-variant(#45c8be, #fff, #45c8be)
+
+  // Primary
+  @include option(primary)
+    +csstyle-button-variant(#02baf2, #fff, #02baf2)
+
+    &:hover,
+    &:active,
+    &:focus
+      +csstyle-button-variant(#0fc7ff, #fff, #0fc7ff)
+
+  // Info
+  @include option(info)
+    +csstyle-button-variant(#a88cd5, #fff, #a88cd5)
+
+    &:hover,
+    &:active,
+    &:focus
+      +csstyle-button-variant(#b094de, #fff, #b094de)
+
+  // Warning
+  @include option(warning)
+    +csstyle-button-variant(#f58410, #fff, #f58410)
+
+    &:hover,
+    &:active,
+    &:focus
+      +csstyle-button-variant(#ff9324, #fff, #ff9324)
+
+  // Danger
+  @include option(danger)
+    +csstyle-button-variant(#f84545, #fff, #f84545)
+
+    &:hover,
+    &:active,
+    &:focus
+      +csstyle-button-variant(#ff5f5f, #fff, #ff5f5f)
+
+  // ===========================================================
+  // Disabled
+  // ===========================================================
+  
+  // Disabled
+  @include option(disabled)
+    pointer-events: none
+    cursor: not-allowed
+    filter: alpha(opacity=65)
+    opacity: .65
+
+  // ===========================================================
+  // Icon
+  // ===========================================================
+  @include option(icon)
+    i
+      padding-right: 3px

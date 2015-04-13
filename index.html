@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Csstyle Component - Button</title>
+
+  <!-- Lato -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- App -->
+  <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body id="csstyle">
+  
+  <div class="section --introduction">
+    <div>
+      <img src="logo.png" />
+      <h1>Button Component</h1>
+      <p>&dollar; bower install --save csstyle-button</p>
+      <a href="#">See more</a>
+      <a href="#"><i class="fa fa-github"></i> Github</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h1>Button Tags</h1>
+      <a class="button" href="#">Link</a>
+      <button class="button" type="submit">Button</button>
+      <input class="button" type="button" value="Input">
+      <input class="button" type="submit" value="Submit">
+      
+      <div class="spacer"></div>
+      <script src="https://gist.github.com/GesJeremie/83f0d202f688e5dd5cf6.js"></script>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="container">
+      <h1>Colors</h1>
+      <a class="button --default">Default</a>
+      <a class="button --primary">Primary</a>
+      <a class="button --success">Success</a>
+      <a class="button --info">Info</a>
+      <a class="button --warning">Warning</a>
+      <a class="button --danger">Danger</a>
+
+      <div class="spacer"></div>
+      <script src="https://gist.github.com/GesJeremie/6984d86c531f79f6ea03.js"></script>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h1>Sizes</h1>
+      <a class="button --xs">Extra small</a>
+      <a class="button --sm">Small</a>
+      <a class="button --md">Medium</a>
+      <a class="button --lg">Large</a>
+      <a class="button --xl">Extra large</a>
+
+      <div class="spacer"></div>
+      <script src="https://gist.github.com/GesJeremie/20848ebd366b59546529.js"></script>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h1>Block</h1>
+      <a class="button --default --block --xl">I take a lot of space</a>
+
+      <div class="spacer"></div>
+      <script src="https://gist.github.com/GesJeremie/558b82eb3224246de443.js"></script>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h1>Disabled</h1>
+      <a class="button --disabled --default">Disabled</a>
+      <a class="button --disabled --primary">Disabled</a>
+      <a class="button --disabled --success">Disabled</a>
+      <a class="button --disabled --info">Disabled</a>
+      <a class="button --disabled --warning">Disabled</a>
+      <a class="button --disabled --danger">Disabled</a>
+
+      <div class="spacer"></div>
+      <script src="https://gist.github.com/GesJeremie/7f30d1dc1f6474a7fca2.js"></script>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h1>Icon</h1>
+      <a class="button --icon"><i class="fa fa-github"></i> Fork us</a>
+
+      <div class="spacer"></div>
+      <script src="https://gist.github.com/GesJeremie/2ff120e4faf640b6c17b.js"></script>
+    </div>
+  </div>
+
+  <div class="spacer --xl"></div>
+
+  <div class="section --grey">
+    <div class="container">
+      <h1>Configuration</h1>
+      <p>
+        Csstyle-button has some variables which are possible to edit, it's really simple : 
+        <div class="spacer"></div>
+        <script src="https://gist.github.com/GesJeremie/2f333b1c4a38887d78c6.js"></script>
+      </p>  
+      <table class="table">
+        <thead>
+          <tr>
+            <th width="280px">Variable</th>
+            <th>Description</th>
+            <th>Default</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>$csstyle-button-namespace</strong></td>
+            <td>The namespace of the component</td>
+            <td>button</td>
+            <td>".btn"</td>
+          </tr>
+          <tr>
+            <td><strong>$csstyle-button-font-family</strong></td>
+            <td>The font family to use</td>
+            <td>"Helvetica Neue", Helvetica, Arial, sans-serif</td>
+            <td>"Lato"</td>
+          </tr>
+          <tr>
+            <td><strong>$csstyle-button-font-weight</strong></td>
+            <td>The font weight to use</td>
+            <td>300</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td><strong>$csstyle-button-base-font-size</strong></td>
+            <td>The base font size to use</td>
+            <td>15px</td>
+            <td>17px</td>
+          </tr>
+          <tr>
+            <td><strong>$csstyle-button-base-padding-top-bottom</strong></td>
+            <td>The top and bottom padding to use</td>
+            <td>6px</td>
+            <td>8px</td>
+          </tr>
+          <tr>
+            <td><strong>$csstyle-button-base-padding-right-left</strong></td>
+            <td>The right and left padding to use</td>
+            <td>12px</td>
+            <td>14px</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  
+
+</body>
+
+</html>

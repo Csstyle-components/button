@@ -1,0 +1,32 @@
+{
+  "name": "csstyle-buttons",
+  "homepage": "https://github.com/Csstyle-components/buttons",
+  "authors": [
+    "Ges Jeremie <bonjour@gesjeremie.fr>"
+  ],
+  "description": "UI button component for csstyle.io",
+  "main": "buttons.sass",
+  "keywords": [
+    "csstyle-button",
+    "csstyle-buttons"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "b6465b0a9d0054d4101bb29ac0f16e960f0c04b4"
+  },
+  "_source": "git://github.com/Csstyle-components/button.git",
+  "_target": "~1.0.0",
+  "_originalSource": "csstyle-button",
+  "_direct": true
+}
