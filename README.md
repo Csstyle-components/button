@@ -1,6 +1,6 @@
-## Csstyle Button
+![Logo](http://gesjeremie.fr/github_resources/button-component.png)
 
-Csstyle is a button component for [csstyle.io](http://csstyle.io)
+Button component for [csstyle.io](http://csstyle.io)
 
 
 ### Installation
