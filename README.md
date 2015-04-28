@@ -1,5 +1,7 @@
 ![Logo](http://gesjeremie.fr/github_resources/button-component.png)
 
+### About
+
 Button component for [csstyle.io](http://csstyle.io)
 
 
