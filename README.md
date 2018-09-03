@@ -1,3 +1,5 @@
+> :skull: This project has been archived.
+
 ![Logo](http://gesjeremie.fr/github_resources/button-component.png)
 
 ### About
